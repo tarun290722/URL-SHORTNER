@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  padding: 1.5rem;
+}
+
+/* Navbar */
+
+.nav {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #f9fafb;
+}
+
+.nav-links,
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.nav-btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.nav-btn-outline {
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  color: #e5e7eb;
+}
+
+.nav-btn-primary {
+  background: #22c55e;
+  color: #022c22;
+}
+
+/* Layout */
+
+.page {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+}
+
+.page-header {
+  margin-bottom: 1.2rem;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Cards, inputs, buttons */
+
+.card {
+  background: #020617;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 1.5rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.input,
+.select {
+  background: #020617;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.btn-secondary {
+  background: rgba(148, 163, 184, 0.2);
+  color: #e5e7eb;
+}
+
+/* Shortener */
+
+.shortener-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.short-result {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+/* Links list */
+
+.links-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.links-table th,
+.links-table td {
+  padding: 0.6rem 0.5rem;
+  text-align: start;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.truncate {
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Auth */
+
+.auth-card {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.auth-form {
+  margin-top: 1rem;
+}
+
+.auth-footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.auth-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.auth-link.small {
+  font-size: 0.8rem;
+}
+
+.auth-extra-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.4rem 0 1rem;
+  font-size: 0.8rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.not-signed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.not-signed-card {
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+.not-signed-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.not-signed-text {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+.not-signed-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.aTag {
+  color: white;
+  text-decoration: none;
+
+}
